@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/* 주석*/
+.container h1 {
+  color: tomato;
+  /* background-color: turquoise; */
+}
+
+/* 중첩 */
+.container > ul li {
+  font-size: 40px;
+}
+.container > ul li .name {
+  color: royalblue;
+}
+.container > ul li .age {
+  color: tomato;
+}
+
+/* 상위 선택자 참조 */
+.btn {
+  position: absolute;
+}
+.btn.active {
+  color: red;
+}
+
+.list li:last-child {
+  margin-right: 0;
+}
+
+.fs-small {
+  font-size: 12px;
+}
+.fs-medium {
+  font-size: 14px;
+}
+.fs-large {
+  font-size: 16px;
+}
+
+/* 중첩된 속성 */
+.box {
+  font-weight: bold;
+  font-size: 10px;
+  font-family: sans-serif;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+/* 변수 */
+.container {
+  position: fixed;
+  top: 200px;
+}
+.container .item {
+  width: 50px;
+  height: 50px;
+  transform: translateX(50px);
+}
+
+/* 산술연산 - 단위가 동일해야된다. (calc()제외)*/
+div {
+  width: 40px;
+  height: 30px;
+  font-size: 20px;
+  margin: 15px;
+  margin-top: 10px;
+  padding: 6px;
+}
+
+span {
+  font-size: 10px;
+  line-height: 10px;
+  font-family: serif;
+  font: 10px/10px serif;
+}
+
+/* 재활용(Mixins) */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+.container .item {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: tomato;
+}
+
+/* 반복문 */
+.box:nth-child(1) {
+  width: 10px;
+}
+
+.box:nth-child(2) {
+  width: 20px;
+}
+
+.box:nth-child(3) {
+  width: 30px;
+}
+
+.box:nth-child(4) {
+  width: 40px;
+}
+
+.box:nth-child(5) {
+  width: 50px;
+}
+
+.box:nth-child(6) {
+  width: 60px;
+}
+
+.box:nth-child(7) {
+  width: 70px;
+}
+
+.box:nth-child(8) {
+  width: 80px;
+}
+
+.box:nth-child(9) {
+  width: 90px;
+}
+
+.box:nth-child(10) {
+  width: 100px;
+}
+
+/* 함수 */
+.box {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* @each 반복문 */
+.box {
+  color: orange;
+}
+
+.box {
+  color: blue;
+}
+
+.box {
+  color: red;
+}
+
+.box-o {
+  color: orange;
+}
+
+.box-r {
+  color: royalblue;
+}
+
+.box-y {
+  color: yellow;
+}
+
+/*# sourceMappingURL=/mian.92453402.css.map */
